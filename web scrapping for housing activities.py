@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Nov  4 11:39:12 2022
 
 @author: zanna
 """
@@ -10,8 +7,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import mpl_toolkits
 import os
-os.chdir('C:/Users/zanna/OneDrive/Documents/MSIS-5193/tweeter')
-directory= 'C:/Users/zanna/OneDrive/Documents/MSIS-5193/tweeter'
+os.chdir('C:/Users/zanna/OneDrive/Documents/MSIS/twitter')
+directory= 'C:/Users/zanna/OneDrive/Documents/MSIS/twitter'
 
 
 import pandas as pd
@@ -125,16 +122,11 @@ result=result.set_index('Date')
 result.columns
 
 
-
-import os
-os.chdir('C:/Users/zanna/OneDrive/Documents/MSIS-5193/tweeter')
-directory= 'C:/Users/zanna/OneDrive/Documents/MSIS-5193/tweeter'
-
 ####Saving file as "austindata.csv"
 
-result.to_csv(r'C:\Users\zanna\OneDrive\Documents\MSIS-5193\tweeter\austindata.csv')
-os.chdir('C:/Users/zanna/OneDrive/Documents/MSIS-5193/tweeter')
-directory= 'C:/Users/zanna/OneDrive/Documents/MSIS-5193/tweeter'
+result.to_csv(r'C:\Users\zanna\OneDrive\Documents\MSIS\twitter\austindata.csv')
+os.chdir('C:/Users/zanna/OneDrive/Documents/MSIS/twitter')
+directory= 'C:/Users/zanna/OneDrive/Documents/MSIS/twitter'
 
 data1 = pd.read_csv("austindata.csv")
 data1.columns
